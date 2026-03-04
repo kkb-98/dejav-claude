@@ -1,6 +1,10 @@
 ---
 name: forget
 description: Clear all baton data (reset session relay)
+user-invocable: true
+allowed-tools:
+  - Bash
+  - Read
 ---
 
 # Forget (Reset Baton)

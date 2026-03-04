@@ -1,6 +1,10 @@
 ---
 name: health
 description: Display session health dashboard
+user-invocable: true
+allowed-tools:
+  - Read
+  - Glob
 ---
 
 # Session Health Dashboard

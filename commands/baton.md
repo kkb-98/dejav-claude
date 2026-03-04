@@ -1,6 +1,11 @@
 ---
 name: baton
 description: Create a baton to relay session context to the next session
+user-invocable: true
+allowed-tools:
+  - Read
+  - Write
+  - Glob
 ---
 
 # Baton Generation
