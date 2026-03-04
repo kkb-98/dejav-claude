@@ -1,0 +1,5 @@
+{
+  "name": "deja-claude",
+  "description": "Session relay plugin — AI never loses memory between sessions. Auto-logs events, caches file summaries, preserves context through compaction, and relays batons between sessions.",
+  "version": "2.0.0"
+}

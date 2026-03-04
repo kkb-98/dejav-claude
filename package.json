@@ -1,0 +1,30 @@
+{
+  "name": "deja-claude",
+  "version": "2.0.0",
+  "description": "Session relay plugin for Claude Code — AI never loses memory between sessions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/deja-claude"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "session-relay",
+    "context-preservation"
+  ],
+  "files": [
+    "scripts/",
+    "hooks/",
+    "commands/",
+    ".claude-plugin/",
+    "README.md",
+    "LICENSE"
+  ]
+}
