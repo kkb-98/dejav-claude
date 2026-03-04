@@ -1,5 +1,5 @@
 ---
-name: health
+name: deja-health
 description: Display session health dashboard
 user-invocable: true
 allowed-tools:
@@ -50,7 +50,7 @@ Display the current session's health metrics.
    - **critical** (0-30)
 
 4. **Add recommendations** based on the score:
-   - **warning**: "Consider creating a baton with `/deja-claude:baton` to preserve context."
-   - **critical**: "Create a baton immediately with `/deja-claude:baton` and consider starting a fresh session."
+   - **warning**: "Consider creating a baton with `/deja-claude:deja-baton` to preserve context."
+   - **critical**: "Create a baton immediately with `/deja-claude:deja-baton` and consider starting a fresh session."
 
 5. If no log file exists, inform the user that no session data has been recorded yet.

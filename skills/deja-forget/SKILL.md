@@ -1,5 +1,5 @@
 ---
-name: forget
+name: deja-forget
 description: Clear all baton data (reset session relay)
 user-invocable: true
 allowed-tools:
