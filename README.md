@@ -1,5 +1,7 @@
 # deja-claude
 
+🌐 [한국어](./README.ko.md) | **English**
+
 **Session relay plugin — AI never loses memory between sessions.**
 
 When a Claude Code session disconnects, all working context is lost. `CLAUDE.md` holds static rules but can't capture "what was I doing right now?" deja-claude automatically logs session events and passes a "baton" between sessions so the next session can pick up exactly where you left off.
@@ -22,6 +24,39 @@ Session A                          Session B
 4. **Compaction Preservation** — Survives Claude's context compaction via systemMessage injection
 5. **Baton Relay** — Create a structured summary for the next session
 6. **Auto-inject** — Next session automatically receives the baton + cached file summaries
+
+## What Makes deja-claude Different?
+
+deja-claude focuses on **automatic session event tracking and relay** — a gap that other Claude Code plugins don't cover.
+
+| Capability | deja-claude | OMC | bkit | superpowers |
+|------------|:-----------:|:---:|:----:|:-----------:|
+| Auto session event relay | **Yes** | No | No | No |
+| Tool use event logging | **Yes** (JSONL) | No | No | No |
+| File read cache + symbol extraction | **Yes** (LRU 50) | No | No | No |
+| Compaction survival context | **Yes** (baton fallback) | No | No | No |
+| Session health monitoring | **Yes** (score system) | No | No | No |
+| Persistent notes/memos | No | **Yes** (notepad) | No | No |
+| Project environment detection | No | **Yes** (project-memory) | No | No |
+| PDCA document system | No | No | **Yes** | No |
+| Dev workflow skills | No | No | No | **Yes** |
+
+### How each plugin approaches "memory"
+
+| Plugin | Focus | Approach |
+|--------|-------|----------|
+| **deja-claude** | "What did I **do** this session?" | Automatic/passive — tracks every tool use and relays to next session |
+| **OMC** | "What do I **know** about this project?" | Intentional/active — AI decides what to save to notepad/memory |
+| **bkit** | "What **process** should I follow?" | Document-based — PDCA methodology guides development phases |
+| **superpowers** | "**How** should I write code?" | Skill-based — TDD, debugging, code review workflows |
+
+### Using together
+
+These plugins are **complementary, not competing**. deja-claude fills the "automatic session continuity" gap:
+
+- **deja-claude + OMC**: Auto-track session events (deja-claude) + intentionally store project knowledge (OMC)
+- **deja-claude + bkit**: Auto-relay work context (deja-claude) + follow structured dev methodology (bkit)
+- **deja-claude + superpowers**: Auto-preserve session state (deja-claude) + apply dev workflow skills (superpowers)
 
 ## Installation
 
