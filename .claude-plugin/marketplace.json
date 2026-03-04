@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dejav-claude-marketplace",
+  "description": "Session relay plugin for Claude Code — AI never loses memory between sessions",
+  "owner": {
+    "name": "kkb-98"
+  },
+  "plugins": [
+    {
+      "name": "deja-claude",
+      "description": "Session relay plugin — AI never loses memory between sessions. Auto-logs events, caches file summaries, preserves context through compaction, and relays batons between sessions.",
+      "version": "2.0.0",
+      "author": {
+        "name": "kkb-98"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/kkb-98/dejav-claude.git"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/kkb-98/dejav-claude"
+    }
+  ]
+}
