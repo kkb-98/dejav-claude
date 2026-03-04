@@ -13,10 +13,7 @@
       "author": {
         "name": "kkb-98"
       },
-      "source": {
-        "source": "url",
-        "url": "https://github.com/kkb-98/dejav-claude.git"
-      },
+      "source": "./",
       "category": "productivity",
       "homepage": "https://github.com/kkb-98/dejav-claude"
     }
